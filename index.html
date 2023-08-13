@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700,400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev server</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+              </svg>
+              
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#">Resume</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          
+        </button>
+      </nav>
+    </header>
+    <!--Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="project">Project</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__link-sun">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+            </svg>
+            
+          </button></li>
+          <li class="mobile-nav__btn btn">Resume</li>
+        </ul>
+      </nav>
+    </div>
+    <!--End of Mobile Navigation -->
+      <main>
+
+        <section class="hero container">
+           <img class="hero__img" src="./public/00326 A.png" alt="Profile picture">
+           <h2 class="hero__subtitle">Hi, I'm Abdul Haseeb 👋</h2>
+           <h1 class="hero__title">FRONT-END <br>
+            WEB DEVELOPER.</h1>
+           <p class="hero__description">A passionate <strong>Frontend / Fullstack-Jamstack</strong> web developer and <strong>UI/UX</strong> enthusiast specialized in building stunning pixel-perfect interactive websites/applications.</p>
+           <a class="hero__btn btn" href="#">Reach out</a>
+        </section>
+
+        <section id="about" class="about container section">
+          <div class="about__content">
+            <h2 class="about__title">About</h2>
+            <p class="about__description">Hello there! I'm Abdul Haseeb, a <strong> Frontend / Fullstack-Jamstack web developer</strong>. I wake up in the morning, grab a cup of coffee, open up my laptop and build things that live on the web all day, everyday.</p>
+            <p class="about__description">People who know me say I'm obsessed, that's fair, I am very driven and love learning new things.</p>
+            <!-- <p></p> -->
+            <hr class="about__hr">
+            <h3 class="about__subtaitle">Technologies</h3>
+            <div class="about__ul-container">
+              <ul class="about__ul">
+                <li class="about__list">JavaScript (ES6+)</li>
+                <li class="about__list">CSS</li>
+                <li class="about__list">HTML</li>
+               
+              </ul>
+              <ul class="about__ul">
+                <li class="about__list">ReactJS</li>
+                <li class="about__list">Bootstrap</li>
+                <li class="about__list">jQuery</li>
+
+              </ul>
+            </div>
+            
+          </div>
+          <div class="about__img-wrapper">
+            <img loading="lazy" class="about__img" src="./public/9dcc2134-67e0-49d1-8704-0913c4e86a25.jpg">
+          </div>
+        </section>
+        <section id="featured" class="featured container section">
+            <h3 class="featured__subtitle">Featured project</h3>
+            <div class="featured__wrapper">
+              <a class="featured__linnk" href=""><svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              </a>
+            </div>
+            <h2 class="featured__title">TECHMORE</h2>
+            <p class="featured__description">Crafting Digital Experiences: Elevating Brands through Innovative Website Designing for TechMore</p>
+            <div class="featured__info-container">
+              <div>
+                <h3 class="featured__label">Tech stack</h3>
+                <ul class="featured__tech-stack">
+                  <li class="featured__info">TailwindCSS</li>
+                  <li class="featured__info">ReactJS</li>
+                  <li class="featured__info">React-hook-form</li>
+                  <li class="featured__info">NextJS</li>
+                  <li class="featured__info">Axios</li>
+                  <li class="featured__info">Supabase</li>
+                  <li class="featured__info">Stripe</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="featured__label">Project type</h3>
+                <p class="featured__info">Static Website </p>
+              </div>
+              <div>
+                <h3 class="featured__label">Timeline</h3>
+                <p class="featured__info">January 2023 - present</p>
+              </div>
+            </div>
+            <div class="featured__img-container">
+              <div class="featured__image-wrapper">
+                <img loading="lazy" src="./public/home.png" alt="Tech More home">
+  
+              </div>
+              <div class="featured__image-wrapper">
+                <img loading="lazy" src="./public/about.png" alt="Tech More about">
+  
+              </div>
+              <div class="featured__image-wrapper">
+                <img loading="lazy" src="./public/services.png" alt="Tech More services">
+  
+              </div>
+              <div class="featured__image-wrapper">
+                <img loading="lazy" src="./public/Cable Installation.png" alt="Tech More Installation">
+  
+              </div>
+              <div class="featured__image-wrapper">
+                <img loading="lazy" src="./public/Expert.png" alt="Tech More expert">
+  
+              </div>
+              <div class="featured__image-wrapper">
+                <img loading="lazy" src="./public/claints.png" alt="Tech More claints">
+  
+              </div>
+              <div class="featured__image-wrapper">
+                <img loading="lazy" src="./public/projucts.png" alt="Tech More projects">
+  
+              </div>
+              <div class="featured__image-wrapper">
+                <img loading="lazy" src="./public/contact.png" alt="Tech More contact"> 
+  
+              </div>
+            </div>
+            
+        </section>
+        
+        <section id="projects" class="work container section">
+          <h2 class="work__title">Projects</h2>
+          <p class="work__description">Diverse Creative Ventures: Exploring Web Development, Web Design, UI/UX, Graphic Design, and 3D Maya Projects.</p>
+
+          <div class="work__container">
+            <!--project1-->
+          <h3 class="work__project-title">Web Development</h3>
+          <div class="work__img-wrapper work__image1">
+
+            <img loading="lazy" src="./public/html-system-website-concept.jpg" alt="web development">
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">Web Development</h3>
+            <p class="work__project-description1">Building the Web: A Showcase of Innovative and Functional Web Development Projects.</p>
+            <p class="work__project-description2">I am deeply passionate about creating dynamic and impactful online experiences that seamlessly fuse cutting-edge technology with user-centric design.</p>
+            <a class="btn work__projects-btn" href="webdevelopment.html">Projects</a>
+          </div>
+          
+
+           <!--project2-->
+           <h3 class="work__project-title">Front End Development</h3>
+           <div class="work__img-wrapper work__image2">
+ 
+             <img loading="lazy" src="./public/html-css-collage-concept.jpg" alt="front end development">
+           </div>
+           <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Front End Development</h3>
+            <p class="work__project-description1">Elevating User Experiences: Showcasing Front-End Development Projects.</p>
+            <p class="work__project-description2">Step into the realm where creativity meets functionality - my collection of Front-End Development projects. As a passionate Front-End Developer, I embark on a journey to craft digital experiences that seamlessly blend captivating design with flawless interactivity.</p>
+            <a class="btn work__project-btn" href="frontenddevelopment.html">Projects</a>
+           </div>
+
+           <!--project3-->
+           <h3 class="work__project-title">Web Designing</h3>
+           <div class="work__img-wrapper work__image3">
+ 
+             <img loading="lazy" src="./public/programming-background-collage.jpg" alt="web designing">
+           </div>
+           <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">Web Designing</h3>
+            <p class="work__project-description1">Crafting Digital Aesthetics: Showcasing Static Web Designing Projects</p>
+            <p class="work__project-description2">Step into a world where creativity knows no bounds - my collection of Web Designing projects. As a dedicated Web Designer, I am passionate about transforming ideas into visually captivating and intuitive digital experiences.</p>
+            <a class="btn work__project-btn" href="webdesign.html">Projects</a>
+           </div>
+
+
+            <!--project4-->
+          <h3 class="work__project-title">UI/UX Designing</h3>
+          <div class="work__img-wrapper work__image4">
+
+            <img loading="lazy" src="./public/online-web-design.jpg" alt="uiux designing">
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">UI/UX Designing</h3>
+            <p class="work__project-description1">Fusing Functionality and Beauty: A Showcase of UI/UX Designing Projects.</p>
+            <p class="work__project-description2">Step into the realm where user experience is paramount - my collection of UI/UX Designing projects. As a dedicated UI/UX Designer, I am passionate about crafting digital journeys that seamlessly blend aesthetics with functionality, ensuring a delightful and meaningful interaction for users.</p>
+            <a class="btn work__project-btn" href="uiux.html">Projects</a>
+          </div>
+          
+
+           <!--project5-->
+           <h3 class="work__project-title">Graphic Designing</h3>
+           <div class="work__img-wrapper work__image5">
+ 
+             <img loading="lazy" src="./public/marketing-strategy-planning-strategy-concept.jpg" alt="graphic designing">
+           </div>
+           <div class="work__project work__content5">
+            <h3 class="work__project-subtitle">Graphic Designing</h3>
+            <p class="work__project-description1">Elevating Visual Communication: Showcasing Dynamic Graphic Designing Projects.</p>
+            <p class="work__project-description2">My collection of Graphic Designing projects. As a dedicated Graphic Designer, I am passionate about weaving narratives through visuals that captivate, communicate, and leave a lasting impact.</p>
+            <a class="btn work__project-btn" href="graphic.html">Projects</a>
+           </div>
+
+           <!--project6-->
+           <h3 class="work__project-title">3D Maya</h3>
+           <div class="work__img-wrapper work__image6">
+ 
+             <img loading="lazy" src="./public/person-working-animation-porject.jpg" alt="3d maya">
+           </div>
+           <div class="work__project work__content6">
+            <h3 class="work__project-subtitle">3D Maya</h3>
+            <p class="work__project-description1">Sculpting Imagination: Unveiling the World of 3D Maya Projects.</p>
+            <p class="work__project-description2">My collection of 3D Maya projects. As a dedicated 3D artist, I am passionate about bringing imagination to life through intricate designs and mesmerizing animations.</p>
+            <a class="btn work__project-btn" href="maya.html">Projects</a>
+           </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact container section">
+          <h2 class="contact__title">Get in contact</h2>
+          <p class="contact__description">Labore magna ut non labore Lorem nisi culpa sint et quis sint. Enim pariatur deserunt do ad exercitation.</p>
+          <a class="contact__btn btn" href="mailto:haseebachappully@gmail.com"
+          target="_blank"
+          >Reach Out</a>
+        </section>
+      </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Abdul Haseeb ~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
+ 
